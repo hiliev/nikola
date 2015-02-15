@@ -165,6 +165,9 @@ class PostList(Directive):
         if not posts:
             return []
 
+        for post in posts:
+            self.state.document.settings.record_dependencies.add(*post.deps(lang))
+
         template_data = {
             'lang': lang,
             'posts': posts,

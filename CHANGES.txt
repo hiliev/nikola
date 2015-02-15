@@ -14,6 +14,8 @@ Features
 Bugfixes
 --------
 
+* Use post dependencies in post_list to make ``post.text()`` work
+  (Issue #1624)
 * Use pyphen properly when there are no dictionaries for this language
   (Issue #1613)
 * Fix ``nikola deploy`` when there is no cache (Issue #1615)
